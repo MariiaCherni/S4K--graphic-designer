@@ -43,3 +43,11 @@ form {
     margin: 0 auto;
     box-shadow: 0 0 2px 4px rgb(192, 142, 142);
   }
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 20px;
+    }
+    label {
+      font-size: 16px;
+    }
+  }

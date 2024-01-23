@@ -266,8 +266,8 @@ footer {
 }
 
 @media (max-width: 750px) {
-  #slideh2 {
-    display: none;
+  #slideshow-container {
+    min-width: 330px;
   }
   .slideshow-container {
     min-width: 330px;
@@ -275,6 +275,11 @@ footer {
   #dotsColumn {
     display: none;
   }
+}
+
+.slideshow-container img {
+  min-width: 400px;
+  min-height: 200px;
 }
 
 * {
