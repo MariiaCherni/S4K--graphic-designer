@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meaning of life</title>
+    <link rel="stylesheet" href="first.css">
+    <script
+    src="https://kit.fontawesome.com/c082c59638.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+    
+    <header>
+        <body>
+            <svg width='600' height='200'>
+            <filter id='money'>
+              <feMorphology in='SourceGraphic' operator='dilate' radius='2' result='expand'/>
+          
+              <feOffset in='expand' dx='1' dy='1' result='shadow_1'/>
+              <feOffset in='expand' dx='2' dy='2' result='shadow_2'/>
+              <feOffset in='expand' dx='3' dy='3' result='shadow_3'/>
+              <feOffset in='expand' dx='4' dy='4' result='shadow_4'/>
+              <feOffset in='expand' dx='5' dy='5' result='shadow_5'/>
+              <feOffset in='expand' dx='6' dy='6' result='shadow_6'/>
+              <feOffset in='expand' dx='7' dy='7' result='shadow_7'/>
+          
+              <feMerge result='shadow'>
+                <feMergeNode in='expand'/>
+                <feMergeNode in='shadow_1'/>
+                <feMergeNode in='shadow_2'/>
+                <feMergeNode in='shadow_3'/>
+                <feMergeNode in='shadow_4'/>
+                <feMergeNode in='shadow_5'/>
+                <feMergeNode in='shadow_6'/>
+                <feMergeNode in='shadow_7'/>
+              </feMerge>
+          
+              <feFlood flood-color='#ebe7e0'/>
+              <feComposite in2='shadow' operator='in' result='shadow'/>
+          
+              <feMorphology in='shadow' operator='dilate' radius='1' result='border'/>
+              <feFlood flood-color='#35322a' result='border_color'/>
+              <feComposite in2='border' operator='in' result='border'/>
+          
+              <feOffset in='border' dx='1' dy='1' result='secondShadow_1'/>
+              <feOffset in='border' dx='2' dy='2' result='secondShadow_2'/>
+              <feOffset in='border' dx='3' dy='3' result='secondShadow_3'/>
+              <feOffset in='border' dx='4' dy='4' result='secondShadow_4'/>
+              <feOffset in='border' dx='5' dy='5' result='secondShadow_5'/>
+              <feOffset in='border' dx='6' dy='6' result='secondShadow_6'/>
+              <feOffset in='border' dx='7' dy='7' result='secondShadow_7'/>
+              <feOffset in='border' dx='8' dy='8' result='secondShadow_8'/>
+              <feOffset in='border' dx='9' dy='9' result='secondShadow_9'/>
+              <feOffset in='border' dx='10' dy='10' result='secondShadow_10'/>
+              <feOffset in='border' dx='11' dy='11' result='secondShadow_11'/>
+          
+              <feMerge result='secondShadow'>
+                <feMergeNode in='border'/>
+                <feMergeNode in='secondShadow_1'/>
+                <feMergeNode in='secondShadow_2'/>
+                <feMergeNode in='secondShadow_3'/>
+                <feMergeNode in='secondShadow_4'/>
+                <feMergeNode in='secondShadow_5'/>
+                <feMergeNode in='secondShadow_6'/>
+                <feMergeNode in='secondShadow_7'/>
+                <feMergeNode in='secondShadow_8'/>
+                <feMergeNode in='secondShadow_9'/>
+                <feMergeNode in='secondShadow_10'/>
+                <feMergeNode in='secondShadow_11'/>
+              </feMerge>
+          
+              <feImage x='0' y='0' width='600' height='200' xlink:href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/stripes.svg'/>
+              <feComposite in2='secondShadow' operator='in' result='secondShadow'/>
+          
+              <feMerge>
+                <feMergeNode in='secondShadow'/>
+                <feMergeNode in='border'/>
+                <feMergeNode in='shadow'/>
+                <feMergeNode in='SourceGraphic'/>
+              </feMerge>
+            </filter>
+          
+            <text dominant-baseline='middle' text-anchor='right' x='10%' y='50%'>
+                Sofiia Lialina
+            </text>
+        
+          </svg>
+        
+    </header>
+    <nav>
+        <a href="#about" class="butNav">About me</a>
+        <a href="#portfolio" class="butNav">Portfolio</a>
+        <a href="#contact" class="butNav">Contact me</a>
+    </nav>
+
+    <section id="about">
+        <h2 id="drain">About me</h2>
+        <div class="about"></div>
+            <section id="slideshowSec">
+                <div id="slideSideText">
+                    <h2 id="slideh2">I'm graphic designer and artist who drawing more than 7 years.Graduated from one of the most popular ukrainian art school.My creativity can speak volumes if you look closely at them. Welcome to my virtual portfolio.I offer diversity of different types Of art works. For more my works you can contact me directly, find that in that site lower</h2>
+                </div>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="me1.jpg"  style="width: 100%" />
+                      
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="me2.jpg"  style="width: 100%" />
+                       
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="me3.jpg" style="width: 100%" />   
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 4</div>
+                      <img src="me4.jpg" style="width: 100%" />   
+                  </div>
+
+                    <div id="arrows">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <br />
+                <div style="text-align: center" id="dotsColumn">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </section>
+          
+    </section>
+    <section id="wholePortf">
+    <h2 id="portH2">Portfolio</h2>
+    <section id="portfolio"  class="gallery-container customs-container">
+        <div class="image-wrapper">
+            <img src="mysl.jpg">
+            <div class="image-overlay">
+                <p class="custom-name">Duma</p>
+                <div class="info-box">
+                    <p class="model-info"> Uosabia ukraińską kulturę, muzykę, sztukę i historię Ukrainy</p>
+                  </div>
+            </div></div>
+
+            <div class="image-wrapper">
+            <img src="dom.jpg" class="Painting"> 
+            <div class="image-overlay">
+                <p class="custom-name">Dom na jeżycka</p>
+                <div class="info-box">
+                  <p class="model-info">Impresja ciepłych czasów w Poznaniu</p>
+                </div>
+            </div></div>
+            <div class="image-wrapper">
+                <img src="woman.jpg" class="Painting"> 
+                <div class="image-overlay">
+                    <p class="custom-name">WOJNA FVCK</p>
+                    <div class="info-box">
+                      <p class="model-info">Praca przedstawia stan Ukrainy na początku wojny. Ból, strach, dezorientacja, niepewność. Krzyczy, aby zatrzymać tę dzikość we współczesnym świecie</p>
+                    </div>
+                </div></div>
+                <div class="image-wrapper">
+                    <img src="war.jpg" class="Painting"> 
+                    <div class="image-overlay">
+                        <p class="custom-name">FVCK WAR 2</p>
+                        <div class="info-box">
+                          <p class="model-info">To krzycząca akcja mająca na celu zatrzymanie wojny na Ukrainie i obalenie rosyjskiego prezydenta, który jest terrorystą i tyranem, z rządu</p>
+                        </div>
+                    </div></div>
+                    <div class="image-wrapper">
+                        <img src="eye.jpg" class="Painting"> 
+                        <div class="image-overlay">
+                            <p class="custom-name">Plakat „George Orwell 1984”</p>
+                            <div class="info-box">
+                              <p class="model-info">Plakat przedstawia treść książki. Rząd jest zawsze w zasięgu wzroku, a on zna każdy twój ruch, nie można przed nim niczego ukryć i zawsze kończy się to w jeden sposób</p>
+                            </div>
+                        </div></div>
+                        <div class="image-wrapper">
+                            <img src="gra.jpg" class="Painting"> 
+                            <div class="image-overlay">
+                                <p class="custom-name">Ciemność </p>
+                                <div class="info-box">
+                                  <p class="model-info">To mroczna martwa natura, która mówi o niewieczności wszystkiego, co nas otacza</p>
+                                </div>
+                            </div></div>
+    </section>
+</section>
+<section id="contact">
+  <h2 id="lose"> Contact me on that page</h2>
+<h2 id="fine"> If you liked one of my works and you'd like to buy anything or you want to make me your pesronal work- contact me </h2>
+<a href="conect.html" class="kitty"> Click on me</a>
+
+
+
+</section>
+    <footer class="footer" id="contact">
+        <div class="container">
+          <div class="footerText">Copyright &copy; 2024</div>
+          <div>
+            <ul class="footerLi">
+              <li>Telefon: +48 517 365 658</li>
+              <li>
+                E-mail:
+                <a href="mailto: sonya.lamborghini@gmail.com"
+                  >sonya.lamborghini@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="socialBox">
+            <div class="socialBoxIcons">
+              <a href="https://www.instagram.com/s4k.design_?igsh=ZDE1MWVjZGVmZQ==">
+                <i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+<script src="script.js"></script>
+
+
+
+  
+</body>
+</html>
