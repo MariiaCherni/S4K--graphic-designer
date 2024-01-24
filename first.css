@@ -1,5 +1,5 @@
 body {
-  font-family: "Trattatello, fantasy";
+  font-family: "Optima, sans-serif";
   margin: 20px;
 }
 
@@ -29,6 +29,7 @@ h1 {
   color: #fff;
   font-size: 4em;
   margin-bottom: 50px;
+  font-family: Optima, sans-serif;
 }
 h2 {
   text-align: center;
@@ -464,4 +465,5 @@ html {
   text-align: left;
   position: absolute;
   color: white;
+  font-family:  Optima, sans-serif;
 }
